@@ -1,0 +1,122 @@
+
+<!doctype html>
+			<html>
+			<head>
+			<meta charset="UTF-8">
+			<title>Recibo de Pagamento</title>
+			<style>
+			* { font-family: sans-serif; color: #252525}
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			.wrap-round{
+				border: 1px solid #000;
+			}
+			.logo{
+				width: 170px;
+				position: absolute;
+				left: 15px;
+				top: -16px;
+			}
+			.header{
+				position: relative;
+				border-bottom: 1px solid #000;
+				height: 45px;
+			}
+			.cel-top{
+				width: 50%;
+			}
+			.cel-top p{
+				margin: 8px 25px;
+				font-size: 12px;
+				white-space: nowrap;
+			}
+			.cel-top input{
+				border: none;
+				outline:none;
+				font-size: 12px;
+				width: 350px;
+			}
+			.line-header{
+				font-size: 13px;
+				font-weight: bold;
+			}
+			.line-header td{
+				border-bottom: 1px solid #000;
+				height: 24px;
+				padding-left: 10px;
+			}
+			.line_prod td{
+				border: 1px solid #808080;
+				font-size: 12px;
+				padding: 2px 8px;
+			}
+			.info_append_price{
+				padding: 10px 0px;
+				font-size: 12px;
+				text-align: right;
+				border-bottom: 0.7px solid #000;
+			}
+			.info_append_price p{
+				margin: 2px 5px;
+			}
+			table input, .default_input{
+				border: none;
+				outline: none;
+			}
+			
+			</style>
+			</head>			 
+			<body>
+			<div class="wrap-round">
+				<div class="header">
+					<img class="logo" src="../img/comuns/Logo-RsMarcenaria.png" />
+					<span style="position:absolute;right:20px;font-size:12px;font-weight:bold;top:15px;">CNPJ: 21355434/424</span>
+				</div>
+				<table cellspacing="0" style="width:100%;">
+					<tr>
+						<td class="cel-top">
+							<p><span>Nome: </span><span style="text-transform:capitalize;"><input type="text" value="Julio Cesar" /></span></p>
+							<p><span>Telefone: </span><span><input type="text" value="(41) 99669-6366" /></span></p>
+							<p><span>Endereço: </span><span><input type="text" value="rua Emanuel Meira Martins 47"></span></p>
+							<p><span>Complemento: </span><span><input type="text" value="Casa" /></span></p>
+							<p><span>Bairro: </span><span><input type="text" value="Cidade Industrial" /></span></p>
+							<p><span>Cidade: </span><span><input type="text" value="Curitiba" /></span></p>
+						</td>
+						<td class="cel-top">
+							<p><span>Data da entrega: </span><span><input style="width:150px;" type="text" value="00/00/2018"></span></p>
+							<p><span>Forma de pagamento: </span><span><input style="width:150px;" type="text" value="Dinheiro" /></span></p>
+							<p><span>WhatsApp: </span><span><input type="text" style="width:150px;" value="(41)99910-3609" /></span></p>
+							<p><span>Telefone: </span><span><input type="text" style="width:150px;" value="3093-5983" /></span></p>
+							<p><span>Email: </span><span><input type="text" style="width:200px;" value="rsmarcenaria@rsmarcenaria.com" /></span></p>
+						</td>
+					</tr>
+				</table>
+				<table cellspacing="0" style="width:100%;border-top: 1px solid #000;">
+					<tr class="line-header">
+						<td>Cód ID</td><td>Produto</td><td>Cor</td><td>Tamanho</td><td>Preço Unitário</td>
+					</tr>
+					<tr class="line_prod">
+							<td><input style="width:70px" type="text" value="00004" /></td><td style="text-transform:capitalize;"><input style="width:100%" type="text" value="Cabeceira king" /></td><td style="text-transform:capitalize;"><input style="width:100%" type="text" value="Marrom Café" /></td><td><input type="text" value="1,38x1,30x0,20" /></td><td><input style="width:90px" type="text" value="R$ 430,00" /></td>
+					</tr>
+					<tr class="line_prod">
+						<td><input style="width:70px" type="text" /></td><td style="text-transform:capitalize;"><input style="width:100%" type="text" value="" /></td><td style="text-transform:capitalize;"><input style="width:100%" type="text" value="" /></td><td><input type="text" value="" /></td><td><input style="width:90px" type="text" value="" /></td>
+					</tr>
+					<tr class="line_prod">
+						<td><input style="width:70px" type="text" /></td><td style="text-transform:capitalize;"><input style="width:100%" type="text" value="" /></td><td style="text-transform:capitalize;"><input style="width:100%" type="text" value="" /></td><td><input type="text" value="" /></td><td><input style="width:90px" type="text" value="" /></td>
+					</tr>
+					<tr class="line_prod">
+						<td><input style="width:70px" type="text" /></td><td style="text-transform:capitalize;"><input style="width:100%" type="text" value="" /></td><td style="text-transform:capitalize;"><input style="width:100%" type="text" value="" /></td><td><input type="text" value="" /></td><td><input style="width:90px" type="text" value="" /></td>
+					</tr>
+				</table>
+				<div class="info_append_price">
+					<p><input style="font-size:12px;" class="default_input" type="text" value="" /></p><p><input style="font-size:12px;" class="default_input" type="text" value="Desconto: R$ 0,00" /></p>
+					<p><input style="font-size:12px;" class="default_input" type="text" value="Frete: R$ 0,00" /></p>
+				</div>
+				<p style="font-size:13px;text-align:right;margin-right:10px;"><b><input class="default_input" style="font-size:12px;" type="text" value="Total: R$ 440,00" /></b></p>
+				<p style="font-size:12px; padding-left:10px;"><span><input class="default_input" style="font-size:12px;width:450px;" type="text" value="Terça, 06 de novembro de 2018" /></span><span style="position:absolute; right:0px; margin-right: 10px;">Ass: ___________________________________</span></p>
+			</div>
+			</body>
+			 
+			</html>

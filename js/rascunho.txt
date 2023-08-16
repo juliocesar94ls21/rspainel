@@ -1,0 +1,28 @@
+	/*$("table tbody tr td").each(function(){
+		var offsetCel = $(this).offset()
+		alert($(this).index());
+		$("this").attr("title" , offsetCel.left);
+	});*/
+	
+	/*$("table tbody tr td").hover(
+	function(){
+		var position = $(this).offset();
+		balomTitle({'title': $(this).attr("title"), 'positionTop': position.top, 'positionLeft': position.left, 'remove': false});
+	},function(){
+		balomTitle({'remove': true});
+	});*/
+	/*$("table tbody tr td").hover(
+	function(){
+		var position = $(this).offset(),
+		content = '<div class="ballom-title">',
+		icon = '<img src="img/comuns/balao.png" />',
+		title = $(this).attr("title"),
+		positionLeft = position.left,
+		positionTop = position.top;
+		if(title != "" && typeof(title) != "undefined"){
+			$(this).append(content+"<p>"+title+"</p>"+icon+"</div>");
+			//$(".ballom-title").css({top: positionTop, left: positionLeft});
+		}
+	},function(){
+		$(".ballom-title").remove();
+	});*/
